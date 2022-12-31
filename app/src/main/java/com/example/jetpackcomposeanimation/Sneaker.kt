@@ -341,7 +341,7 @@ fun ProductDetails(visible: Boolean, gradientColor: Brush, colorAccent: Color) {
                 }
 
                 Text(
-                        text = "Looking for Bob Marley shoes? The best gift for couples matching shoes. These bob marley shoes are suitable for women, can be as gifts for couples or lovers. The brand new rubber soles is soft and flexible while the high quality material can be stretched to fit your shoes most comfortable for couples, matching shoes, sneakers, boots for women and men. Explore a wide selection of the best bob marley shoes on AliExpress to find one that fits your need! Besides good quality brands, you’ll also find plenty of discounts when you shop for bob marley shoes during big sales. Don’t forget one crucial step - filter for items that offer bonus perks like free shipping & free return to make the most of your online shopping experience!</string>\n",
+                        text = "Looking for Bob Marley shoes? The best gift for couples matching shoes. These bob marley shoes are suitable for women, can be as gifts for couples or lovers. The brand new rubber soles is soft and flexible while the high quality material can be stretched to fit your shoes most comfortable for couples, matching shoes, sneakers, boots for women and men. Explore a wide selection of the best bob marley shoes on AliExpress to find one that fits your need! Besides good quality brands, you’ll also find plenty of discounts when you shop for bob marley shoes during big sales. Don’t forget one crucial step - filter for items that offer bonus perks like free shipping & free return to make the most of your online shopping experience!>\n",
                         modifier = Modifier
                                 .animateEnterExit(
                                         enter = slideInVertically(animationSpec = tween(delayMillis = 600), initialOffsetY = { it }),
@@ -352,6 +352,8 @@ fun ProductDetails(visible: Boolean, gradientColor: Brush, colorAccent: Color) {
                         style = RubikTypography.bodyLarge,
                         fontWeight = FontWeight.Normal
                 )
+
+                Spacer(modifier = Modifier.size(200.dp))
 
             }
 
