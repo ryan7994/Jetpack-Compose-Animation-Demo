@@ -1,0 +1,102 @@
+{
+  ConstraintSets : {
+	start : {
+	  topSpacer : {
+		start : ['parent', 'start'],
+		top : ['parent', 'top']
+	  },
+	  leftSpacer : {
+		start : ['parent', 'start'],
+		top : ['parent', 'top']
+	  },
+	  header1 : {
+		top : [
+		  'topSpacer', 'bottom'
+		],
+		start : [
+		  'leftSpacer', 'end'
+		],
+		scaleX : 2,
+		scaleY : 2,
+		pivotX : 0,
+		pivoty : 0
+	  },
+	  header_2 : {
+		top : ['header1', 'bottom', 16],
+		start : ['header1', 'start'],
+		scaleX : 2,
+		scaleY : 2,
+		pivotX : 0,
+		pivoty : 0
+	  },
+	  header_3 : {
+		top : ['header_2', 'bottom', 16],
+		start : ['header1', 'start',],
+		scaleX : 2,
+		scaleY : 2,
+		pivotX : 0,
+		pivoty : 0
+	  },
+	  spacer : {
+		top : ['header_3', 'bottom']
+	  },
+	  pager : {
+		top : ['spacer', 'bottom'],
+		start : ['parent', 'start'],
+		end : ['parent', 'end']
+	  }
+	},
+	end : {
+	  topSpacer : {
+		start : [
+		  'parent', 'start'
+		],
+		top : [
+		  'parent', 'top'
+		]
+	  },
+	  leftSpacer : {
+		start : [
+		  'parent', 'start'
+		],
+		top : [
+		  'parent', 'top'
+		]
+	  },
+	  header1 : {
+		top : ['topSpacer', 'bottom'],
+		start : ['leftSpacer', 'end'],
+		scaleX : 1,
+		scaleY : 1,
+		padding : 50
+	  },
+	  header_2 : {
+		top : ['header1', 'top'],
+		start : ['header1', 'end', 8],
+		scaleX : 1,
+		scaleY : 1
+	  },
+	  header_3 : {
+		top : ['header1', 'top'],
+		start : ['header_2', 'end', 8],
+		scaleX : 1,
+		scaleY : 1
+	  },
+	  spacer : {
+		top : ['header_3', 'bottom']
+	  },
+	  pager : {
+		top : ['header1', 'bottom', 16],
+		start : ['parent', 'start'],
+		end : ['parent', 'end']
+	  }
+	}
+  },
+  Transitions : {
+	default : {
+	  from : 'start',
+	  to : 'end'
+	},
+	duration : 900
+  }
+}

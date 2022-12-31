@@ -1,0 +1,103 @@
+{
+  ConstraintSets: {
+    start: {
+      header1: {
+        top: [
+          'parent',
+          'top'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        scaleX: 2,
+        scaleY: 2,
+        pivotX: 0,
+        pivoty: 0,
+        custom: {
+          fontSize: 50
+        }
+      },
+      header_2: {
+        top: [
+          'header1',
+          'bottom',
+          16
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        scaleX: 2,
+        scaleY: 2,
+        pivotX: 0,
+        pivoty: 0
+      },
+      header_3: {
+        top: [
+          'header_2',
+          'bottom',
+          16
+        ],
+        start: [
+          'parent',
+          'start',
+        ],
+        scaleX: 2,
+        scaleY: 2,
+        pivotX: 0,
+        pivoty: 0
+      }
+    },
+    end: {
+      header1: {
+        top: [
+          'parent',
+          'top'
+        ],
+        start: [
+          'parent',
+          'start'
+        ],
+        scaleX: 1,
+        scaleY: 1,
+        custom: {
+          fontSize: 20
+        }
+      },
+      header_2: {
+        top: [
+          'parent',
+          'top'
+        ],
+        start: [
+          'header1',
+          'end',
+          8
+        ],
+        scaleX: 1,
+        scaleY: 1
+      },
+      header_3: {
+        top: [
+          'parent',
+          'top'
+        ],
+        start: [
+          'header_2',
+          'end',
+          8
+        ],
+        scaleX: 1,
+        scaleY: 1
+      }
+    }
+  },
+  Transitions: {
+    default: {
+      from: 'start',
+      to: 'end'
+    },
+    duration: 900
+  }
+}
